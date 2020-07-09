@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="a" name="a"> + <input type="number" id="b" name="b">
+    <button id="sendBtn">=</button><span id="result"></span>
+    <script src="./jq.js"></script>
+    <script>
+    //     const sendBtn = $("#sendBtn"),
+    //     $a = $("#a"),
+    //     $b = $("#b"),
+    //     result =$('result');
+        
+    //     sendBtn.on('click', function(){
+    //     console.log($a.val(), $b.val());
+    // });
+    // const sendBtn = $('#sendBtn'),
+    //     $a = $('#a'),
+    //     $b = $('#b'),
+    //     result = $('#result');
+
+    // sendBtn.on('click', function(){
+    //     console.log($a.val(), $b.val());
+   
+
+    // $.get.on(
+    //     'plus.php'
+    //     {a:$a.val(), b: $b.val()},
+    //         function(data){
+    //             result.text(data);
+    //         });
+    //     });
+
+    //     const sendBtn = $('#sendBtn'),
+    //     $a = $('#a'),
+    //     $b = $('#b'),
+    //     result = $('#result');
+
+    // sendBtn.on('click', function(){
+    //     console.log($a.val(), $b.val());
+
+    //     $.get(
+    //         'plus.php',
+    //         {a:$a.val(), b: $b.val()},
+    //         function(data){
+    //             result.text(data);
+    //     });
+    // });
+    // </script>
+
+
+
+<form name="form1" onsubmit="return false">
+    <input type="hidden" name="my" value="567">
+    <input type="number" id="a" name="a"> + <input type="number" id="b" name="b">
+    <button id="sendBtn">=</button><span id="result"></span>
+</form>
+
+<script src="../lib/jquery-3.5.1.js"></script>
+<script>
+    const sendBtn = $('#sendBtn'),
+        result = $('#result');
+
+    sendBtn.on('click', function(){
+
+        $.get(
+            'a20200709-04-plus.php',
+            $(document.form1).serialize(),
+            function(data){
+                result.html(data);
+        });
+    });
+
+</script>
+</body>
+</html>
