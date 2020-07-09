@@ -13,10 +13,16 @@
     echo __DIR__;
     echo __FILE__;
  
-$a=1213;
+$a =1213;
 echo'a';
 
 
+// echo "# php20200709" >> README.md
+// git init
+// git add README.md
+// git commit -m "first commit"
+// git remote add origin https://github.com/zero885566/php20200709.git
+// git push -u origin master
 
  ?>
 </body>
