@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <pre>
     <?php
     // $ar = array(3,3,3,3);
     // $ar1 = [4,4,4,4];
@@ -21,11 +22,24 @@
     // );
     // print_r($p)
 
+    $p = [
+        'name' => '彼得',
+        'age' => 27,
+        'gender' => 'male',
+    ];
+    $a=$p;
+    $b=&$p;
+    $p['age'] = 66;
+    print_r($p);
+    print_r($a);
+    print_r($b);
 
-    
+
+
 
 
     ?>
+    </pre>
 
 
 </body>
