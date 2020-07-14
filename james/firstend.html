@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/vegas/vegas.min.css">
+    <link    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"  />
+    <style>
+      .float{
+        float: right;
+        float:inline-end
+      }
+      .img1{
+        width: 700px;
+        transform: translateY(60vh) translateX(300px)  ;
+        transition: 2s;;
+      }
+      .img2{
+        width: 200px;
+        /* transform: translateY(60vh) translateX(900px)  ; */
+      }
+      .ball{
+            height: 30px;
+            float: right;
+            background: url("/images/Dribbble.gif") center center ;
+            object-fit: cover;
+        }
+        .img1:hover{
+          width: 800px;
+        }
+        @media screen  and  (max-width: 768px) {
+          .img1{
+            width: 100%;
+            transform: translateY(100px) translateX(0px)  ;
+          }
+        }
+
+    </style>
+  </head>
+  <body class="black ">
+    
+    <div class="btn-group float">
+      
+      <button type="button " class="btn btn-secondary dropdown-toggle ball  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        menu
+      </button> 
+      <div class="dropdown-menu dropdown-menu-right ball ">
+        <button class="dropdown-item ball" type="button"> <a href="/firstend.html"> PAGE1</a></button>
+        <button class="dropdown-item ball" type="button"><a href="/second50.html">PAGE2</a>  </button>
+        <button class="dropdown-item ball" type="button"><a href="/third-end.html">PAGE3</a></button>
+        <button class="dropdown-item ball" type="button"><a href="/fourth80.html">PAGE4</a> </button>
+        <button class="dropdown-item ball" type="button"><a href="/fivethend.html">PAGE5</a> </button>
+      </div>     
+      </div>  
+      <div class="box">
+        <img class="img2 animate__animated animate__jackInTheBox" src="/images/Kobe Bryant.png" alt="">
+        <img class="img1 " src="/images/firstele.png " alt="">
+      </div>
+    <!-- <img src="/images/8-2.jpg" alt="">
+    <img src="/images/8-3.jpg" alt=""> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/vegas/vegas.min.js"></script>
+    <script>
+      $("#example, body").vegas({
+      loop: true,
+      cover:true,
+        slides: [
+        { src: "/images/24-2-.jpg" },
+        { src: "/images/24-3-.jpeg" },
+        { src: "/images/24-7-.jpg" },
+        { src: "/images/kobe-bryant-obituary.jpg" },
+         ],
+         transition: 'zoomOut2',
+    });
+    $('a#previous').on('click', function () {
+    $elmt.vegas('previous');
+});
+    </script>
+  
+  </body>
+</html>

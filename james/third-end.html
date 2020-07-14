@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/lightbox2-dev/dist/css/lightbox.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    <style>
+        .body{
+            transition: 2s;
+        }
+         .flex{
+             display: flex;
+         }
+        .aligen{
+            align-items: center;
+        }
+        .jusitfy{
+            justify-content: center;
+        }
+        .absoult{
+            position: absolute;
+        }
+        .realtive{
+            position: relative;
+        }
+        .wrapper{
+            width: 1280px;
+        }
+        .black{
+            background: #000000;
+        }
+        .textcolor{
+            color: #ffffff;
+        }
+        header{
+            width: 100%;
+            height:150px;
+        }
+        header img{
+            width: 90%;
+        }
+        .font{
+            font-family: 'Shadows Into Light', cursive;
+        }
+        .ball{
+            height: 30px;
+            float: right;
+            background: url("/images/Dribbble.gif") center;
+        }
+        
+        /*以上共用*/
+        .one{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .one img{
+            width: 400px;
+            height: 600px;
+            object-fit: cover;
+        }
+        .one img{
+            filter: brightness(50%) blur(4px);
+            transition: 1S;
+        }
+        .one img:hover{
+            filter: brightness(100%) blur(0px);
+        }
+        .chapterone{
+            bottom: 0;
+            left:400px;
+        }
+        .box{
+            width: 100% ;
+            height: 10px;
+        }
+        .yellow{
+            background: yellow;
+        }
+        .purple{
+            background: rgb(247, 4, 247);
+        }
+        .two{
+            margin-top: 50px;
+            height: 500px;
+        }
+       
+        .photo img{ 
+            width: 100px;
+            height: 300px;
+            object-fit: cover;
+        }
+            .three{
+                margin-top: 50px;
+                height: 1000px;
+            }
+            .three img{
+                width: 500px;
+                height: 800px;
+                object-fit: cover;
+            }
+            .Threepeat{
+                width: 400px;
+            }
+            .three img{
+                top: 50px;
+                left: 500px;
+            }
+        
+        .top{
+            width: 300px;
+        }
+        .change{
+            background: #000000;
+            color: #ffffff6c;
+            transition: 1s;
+        }
+        .change:hover{
+            background: #ffffff;
+            color: #000000
+        }
+        .a{
+            transform: translateY(300px);
+        }
+        @media screen  and  (max-width: 768px) {
+                header{
+                    width: 80%;
+           
+                }
+                header img{
+                    height:50px;
+                }
+                .one{
+                    flex-direction: column;
+                    margin-top: 0px;
+            margin-bottom: 50px
+                }
+                .chapterone{
+                 bottom: 0;
+                left:0;
+                }
+                .two{
+                    width: 80%;
+                }
+        .three{
+            margin-top: 50px;
+            /* height: 300px; */
+            flex-direction: column;
+        }
+        .three img{
+            width: 500px;   
+            height: 800px;
+            object-fit: cover;
+        }
+        .Threepeat{
+            /* width: 100%; */
+        }
+        .three img{
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+        .top{
+            transform: translateY(1000vh);
+            width: 300px;
+        }
+           
+        }
+     
+    </style>
+  </head>
+  <body class="black font">
+   
+    <header class="flex ">
+        <img class="" src="/images/ele.png" alt="">
+        <button type="button " class="btn btn-secondary dropdown-toggle ball  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            menu
+          </button> 
+          <div class="dropdown-menu dropdown-menu-right ball ">
+            <button class="dropdown-item ball" type="button"> <a href="/firstend.html"> PAGE1</a></button>
+            <button class="dropdown-item ball" type="button"><a href="/second50.html">PAGE2</a>  </button>
+            <button class="dropdown-item ball" type="button"><a href="/third-end.html">PAGE3</a></button>
+            <button class="dropdown-item ball" type="button"><a href="/fourth80.html">PAGE4</a> </button>
+            <button class="dropdown-item ball" type="button"><a href="/fivethend.html">PAGE5</a> </button>
+          </div>     
+    </header>
+    
+    <div class="one flex  container  realtive">
+        <img class="brightness" src="/images/p2-1.jpg" alt=""> 
+        <!-- ㄉ -->
+        <div class="chapterone absoult textcolor change">
+        <h2>Adjusting to the NBA (1996–1999)</h2>
+        <p>
+            Bryant debuted in the Summer Pro League in Long Beach, California, scoring 25 points in front of a standing-room-only crowd. Defenders struggled to get in front of him, and his performance excited West and Lakers coach Del Harris.[55] He scored 36 points in the finale and finished with averages of 24.5 points and 5.3 rebounds in four games.[56] As a rookie in 1996–97, Bryant mostly came off the bench behind guards Eddie Jones and Nick Van Exel.[57] At the time he became the youngest player ever to play in an NBA game (18 years, 72 days; a record since broken by Jermaine O'Neal and former teammate Andrew Bynum), and also became the youngest NBA starter (18 years, 158 days).[58][59] Initially, Bryant played limited minutes, but as the season continued, he began to see some more playing time.</p>
+        </div>
+    </div>
+    <div class="box yellow"></div>
+    <div class="box purple"></div>
+    <div class="content two flex  textcolor realtive jusitfy aligen" >
+        <div class="photo flex" data-0=" filter: brightness(50%) blur(4px); translatex(-3000px)" data-1000=" filter: brightness(100%) blur(0px); translatex(0px)" >
+            <!-- <img src="/images/8-1.jpg" alt="">
+            <img src="/images/8-2.jpg" alt="">
+            <img src="/images/8-3.jpg" alt="">
+            <img src="/images/8-4.jpg" alt="">
+            <img src="/images/8-5.jpg" alt="">
+            <img src="/images/8-6.jpg" alt="">
+            <img src="/images/8-7.jpg" alt=""> -->
+            <a href="/images/8-2.jpg" data-lightbox="roadtrip"><img src="/images/8-2.jpg" alt=""></a>
+            <a href="/images/8-3.jpg" data-lightbox="roadtrip"><img src="/images/8-3.jpg" alt=""></a>
+            <a href="/images/8-4.jpg" data-lightbox="roadtrip"><img src="/images/8-4.jpg" alt=""></a>
+            <a href="/images/8-5.jpg" data-lightbox="roadtrip"><img src="/images/8-5.jpg" alt=""></a>
+            <a href="/images/8-6.jpg" data-lightbox="roadtrip"><img src="/images/8-6.jpg" alt=""></a>
+            <a href="/images/8-7.jpg" data-lightbox="roadtrip"><img src="/images/8-7.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="box purple"></div>
+    <div class="box yellow"></div>
+    <div class="content three flex  textcolor container  realtive change" data-0=" filter: brightness(50%) blur(4px); translatex(-3000px)" data-900=" filter: brightness(100%) blur(0px); translatex(0px)" >
+        <div class="Threepeat">
+        <h4>Three-peat (1999–2002)</h4>
+        <p> Bryant taking a shot in 1999.
+            Bryant's fortunes would improve when Phil Jackson took over as coach of the Lakers in 1999.[72] After years of steady improvement, Bryant became one of the premier shooting guards in the league, earning appearances in the league's All-NBA,[73] All-Star, and All-Defensive teams.[74] The Lakers became championship contenders behind the center-guard combination of Bryant and O'Neal. Jackson utilized the triangle offense that he implemented to win six championships with the Chicago Bulls; this offense would help both Bryant and O'Neal rise to the elite class of the NBA. Three championships were won consecutively in 2000, 2001, and 2002, further cementing this view.[75]    
+        </p>
+        </div>
+       
+        <img class="absoult" data-0=" filter: brightness(50%) blur(4px);" data-bottom=" filter: brightness(100%) blur(0px);" src="/images/p2-3.jpg" alt="" href="" >
+    </div>
+    <img class="top" data-1300="transform: translatex(90px);  filter: brightness(0%)" data1900="transform: translatex(0px);  filter: brightness(100%)"  src="/images/ele2.png" alt="" >
+    
+    <!-- Optional JavaScript -->    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="lightbox2-dev/dist/js/lightbox-plus-jquery.js"></script>
+    <script type="text/javascript" src="/skrollr-master/src/skrollr.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+    </script>
+        <script>
+        $(function () {
+        $(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        console.log(scrollVal)
+        $("span.qScrollTop").text(scrollVal);
+        });
+        });
+        </script>
+        <script>
+            function animateCSS(element, animationName, callback) {
+    const node = document.querySelector(element)
+    node.classList.add('animated', animationName)
+    function handleAnimationEnd() {
+        node.classList.remove('animated', animationName)
+        node.removeEventListener('animationend', handleAnimationEnd)
+        if (typeof callback === 'function') callback()
+    }
+    node.addEventListener('animationend', handleAnimationEnd)
+}
+        </script>
+          <script
+          src="https://code.jquery.com/jquery-3.5.1.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+          <script>
+            $(".top").click(function(){
+              console.log(123)
+              // $("html").scrollTop(0)
+              $("html").animate({
+                scrollTop: 0
+              })
+            })
+            
+          </script>
+  </body>
+</html>

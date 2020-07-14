@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/vegas/vegas.min.css">
+    <style>
+      .flot{
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
+      </div>
+    </div> 
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="/vegas/vegas.min.js"></script>
+    <script>
+    $("#example, body").vegas({
+      loop: true,
+      cover:true,
+        slides: [
+        { src: "/images/24-2-.jpg" },
+        { src: "/images/24-3-.jpeg" },
+        { src: "/images/24-7-.jpg" },
+        { src: "/images/kobe-bryant-obituary.jpg" },
+         ],
+         transition: 'zoomOut2',
+    });
+    $('a#previous').on('click', function () {
+    $elmt.vegas('previous');
+});
+    </script>
+  </body>
+</html>
