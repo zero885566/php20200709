@@ -7,16 +7,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link <?= $pageName=='addressbook' ? 'active' : '' ?>" href="/jamesphp/addresssbook.php">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item <?= $pageName=="adlist" ? 'active' : '' ?>">
+        <a class="nav-link" href="/jamesphp/adlist.php" >Link</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item <?= $pageName=='adinsert' ? 'active' : '' ?>">
+        <a class="nav-link " href="/jamesphp/adinsert.php">card</a>
+      </li>
+
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        </a> -->
+        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
@@ -25,7 +29,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+      </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -33,3 +37,14 @@
     </form>
   </div>
 </nav>
+
+<style>
+    .active{
+        background-color: blue;
+    }
+  
+    ul.navbar-nav > .nav-item.active {
+        background-color: #9fcdff;
+        border-radius: 10px;
+    }
+</style>

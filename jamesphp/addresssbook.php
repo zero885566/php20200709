@@ -1,3 +1,6 @@
+<?php require __DIR__ .'/connect.php';
+$pagename='addressbook';
+?>
 <?php include __DIR__.'/header.php' ?>
 <?php include __DIR__.'/nav.php' ?>
 <div>
