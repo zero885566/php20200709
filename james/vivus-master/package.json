@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "eslint": "^5.15.3",
-    "karma": "^4.0.1",
+    "karma": "^6.3.16",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.2",
     "karma-jasmine": "^2.0.1",
